@@ -17,10 +17,19 @@ Examples:
 
 
 Scenario: 	Use API for Trello Board creation
+Given I am on the main application page
+Then the page title is equal to 'Trello'
+When I click on element located `By.xpath(//a[text()="Log In"])`
+When I enter `qQALUA@gmail.com` in field located `By.xpath(//input[@id='user'])`
+When I enter `qPSK9C37` in field located `By.xpath(//input[@id='password'])`
+When I click on element located `By.xpath(//input[@id="login"])`
+When I enter `qPSK9C37` in field located `By.xpath(//input[@id='password'])`
+When I click on element located `By.xpath(//button[@id="login-submit"])`
+
 Given request body: {
 	"key": "#{generate(regexify '[0-9a-fA-F]{32}')}",
 	"token": "#{generate(regexify '[0-9a-fA-F]{64}')}",
 	"name": "newBoard"
 	}
-When I issue a HTTP POST request for a resource with the URL 'https://api.trello.com/1/boards/'
-Then `${responseCode}` is equal to `200`
+When I issue a HTTP POST request for a resource with the URL 'https://api.trello.com/PEJDHQ/boards/'
+Then the response code is equal to '200'
