@@ -1,4 +1,4 @@
-Description: task 2 - Precondion
+Description: task 2 - Precondition
 
 Scenario: ‘Sign Up’ scenario as precondion
 Given I am on the main application page
