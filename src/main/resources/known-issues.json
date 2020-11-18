@@ -1,9 +1,9 @@
 {
 	"TEST-333": {
 		"type": "Internal",
-		"assertionPattern": "Page title [Expected:.*",
-		"storyPattern": ".*task4.*" ,
-		"scenarioPattern": "Login with known issue.*" ,
-		"steppattern": "Then the page title.*"
-			
+		"assertionPattern": "Page title \\[Expected:.*",
+		"storyPattern": "task4" ,
+		"scenarioPattern": "Login with known issue" ,
+		"stepPattern": "Then the page title is equal to 'Trello'"
+		}	
 }
