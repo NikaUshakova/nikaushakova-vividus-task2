@@ -3,7 +3,7 @@ Description: task 3 - nested steps to check if elements exist
 GivenStories: story/web/PreCondition_Login.story
 
 Scenario: Close all boards
-When I find >= '1' elements by By.xpath(//ul/li/a/div/div[@class='board-tile-details-name']) and for each element do
+When I find >= '1' elements by By.xpath(//div[@class='board-tile-details-name']) and for each element do
 |step																												|
 |When I save text of context element to SCENARIO variable `Board`													|
 |When I click on element located `By.xpath(//div[@title='${Board}'])`												|

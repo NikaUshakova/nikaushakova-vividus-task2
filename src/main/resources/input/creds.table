@@ -1,0 +1,2 @@
+|email		 	  					|displayName				 |password							    |
+|#{generate(Internet.emailAddress)}	|#{generate(Name.firstName)} |#{generate(regexify '[A-Za-z0-9]{8}')}|

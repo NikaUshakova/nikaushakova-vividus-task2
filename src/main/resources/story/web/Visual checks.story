@@ -22,7 +22,7 @@ When I COMPARE_AGAINST baseline with `search_ignoring` ignoring:
 |By.xpath(//input[@type='search'])|
 using screenshot configuration:
 |webFooterToCut|
-|830		   |
+|839		   |
 When I click on element located `By.xpath(//a[@href='/search?q=${nameValue}'])`
 
 Scenario: Visual checks - Change Username

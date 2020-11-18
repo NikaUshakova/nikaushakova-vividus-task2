@@ -5,5 +5,13 @@
 		"storyPattern": "task4" ,
 		"scenarioPattern": "Login with known issue" ,
 		"stepPattern": "Then the page title is equal to 'Trello'"
-		}	
+		},
+		
+	"TEST-222": {		
+		"type": "Internal",
+		"assertionPattern": "An element with attributes:.*Visibility: VISIBLE.*Expected: exists Actual: does not exist\\]|The number of found elements \\[Expected: number of elements is a value equal to <1> Actual: <0>\\]",
+		"storyPattern": "task1 - Sign Up|PreCondition_SignUp|task2",
+		"scenarioPattern": "Sign Up scenario using page elements steps|Sign Up scenario as precondion|Login as existing user" ,
+		"stepPattern": "When I click on element located `By.xpath\\(//div\\[\\@class='verify-button-holder'\\]\\)`|Then number of elements found by `By.xpath\\(//input\\[\\@value='Log in with Atlassian'\\]\\)` is EQUAL_TO `1`"
+		}
 }
